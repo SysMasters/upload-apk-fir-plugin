@@ -72,7 +72,7 @@ public class OkHttpUtil{
     }
 
     UploadApp uploadApkPgyer(String apkPath,String apiKey,String fileName) {
-        String upload_url = "https://www.pgyer.com/apiv2/app/upload"
+        String upload_url = "https://www.xcxwo.com/apiv2/app/upload"
         RequestBody fileBody = RequestBody.create(MediaType.parse("application/octet-stream"), new File(apkPath))
         MultipartBody body = new MultipartBody.Builder()
                 .setType(MediaType.parse("multipart/form-data"))
