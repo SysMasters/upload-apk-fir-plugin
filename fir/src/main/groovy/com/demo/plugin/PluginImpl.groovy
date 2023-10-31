@@ -53,7 +53,7 @@ class PluginImpl implements Plugin<Project> {
                     OkHttpUtil okHttpUtil = new OkHttpUtil()
                     UploadApp uploadApp = okHttpUtil.uploadApkPgyer(apkPath, apiKey,fileName)
                     println("上传apk文件返回结果:$uploadApp")
-                    sendDingTalk(appBuild, appVersion, okHttpUtil, "https://www.pgyer.com/${uploadApp.data.buildShortcutUrl}",apkPath,uploadApp.data.buildQRCodeURL)
+                    sendDingTalk(appBuild, appVersion, okHttpUtil, "https://pgyer.com/${uploadApp.data.buildShortcutUrl}",apkPath,uploadApp.data.buildQRCodeURL)
                 }
 
                 // 在assembleDebug执行后执行
